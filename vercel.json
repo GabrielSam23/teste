@@ -1,13 +1,7 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "server.js",
-      "use": "@now/node-server"
-    },
-    {
-      "src": "public/**",
-      "use": "@now/static"
-    }
+    { "src": "server.js", "use": "@vercel/node" },
+    { "src": "public/**", "use": "@now/static" }
   ]
 }
