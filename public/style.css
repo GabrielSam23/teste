@@ -1,0 +1,74 @@
+$primary-color: #007bff;
+$primary-color-dark: #0056b3;
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: $primary-color;
+}
+
+#stock-value {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: $primary-color;
+}
+
+#total-value {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px;
+}
+
+#buy-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: $primary-color;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#buy-button:hover {
+    background-color: $primary-color-dark;
+}
+
+/* Animação do botão */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#buy-button:hover {
+    animation: pulse 0.5s infinite alternate;
+}
